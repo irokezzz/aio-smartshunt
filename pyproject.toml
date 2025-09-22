@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aio-smartshunt"
+version = "0.1.0"
+description = "Asyncio-based drivers for smart shunts / DC meters (CW20 and similar)"
+authors = [
+    { name = "Volodymyr Yanushkevych", email = "irokez2000@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "aiobmsble>=0.4.1",  # підтягує твою базову бібліотеку
+    "bleak>=0.22.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/irokezzz/aio-smartshunt"
